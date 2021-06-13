@@ -81,7 +81,7 @@ void SerialReceive_Task(void* pvParameters) {
 
 		get_serial_character(COM_CH, &cc);
 
-		if (cc == 0xef)
+		if (cc == 0xfe)
 		{
 			r_point = 0;//prvi karakter, postavlja r_point na nula da moze poceti ubacivati u bafer
 		}
